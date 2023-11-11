@@ -1,0 +1,32 @@
+{
+  "uid": "PEEUxrriZuNYAdy3z9Ia4QGLsEW2",
+  "displayName": null,
+  "photoURL": null,
+  "email": "email@email.com",
+  "emailVerified": false,
+  "phoneNumber": null,
+  "isAnonymous": false,
+  "tenantId": null,
+  "providerData": [
+    {
+      "uid": "email@email.com",
+      "displayName": null,
+      "photoURL": null,
+      "email": "email@email.com",
+      "phoneNumber": null,
+      "providerId": "password"
+    }
+  ],
+  "apiKey": "AIzaSyABUCqWlDgAJvNbBOAgtL0WBms-shyxaFo",
+  "appName": "[DEFAULT]",
+  "authDomain": "tasks-cae00.firebaseapp.com",
+  "stsTokenManager": {
+    "apiKey": "AIzaSyABUCqWlDgAJvNbBOAgtL0WBms-shyxaFo",
+    "refreshToken": "AMf-vBwKQ90I0pnb_hMsJ2qTswvxnX96iLQt5s6xEn7z-28SMJPStePFaDHZ9i1tkl0BACwD766w8j5q02VJc9nZOq7RMoy90WGEEm2PA4UikZPpBTN7BE9tVOzQybljQjHTOnbWYaQH-KiFnWUu18KwDY02j2VqfkbLvzNEzUPzuTAwVYfufdr64qSW9k1ubAe3GDGkVjfD",
+    "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ0OWU0N2ZiZGQ0ZWUyNDE0Nzk2ZDhlMDhjZWY2YjU1ZDA3MDRlNGQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vdGFza3MtY2FlMDAiLCJhdWQiOiJ0YXNrcy1jYWUwMCIsImF1dGhfdGltZSI6MTY5OTY1NzQwMCwidXNlcl9pZCI6IlBFRVV4cnJpWnVOWUFkeTN6OUlhNFFHTHNFVzIiLCJzdWIiOiJQRUVVeHJyaVp1TllBZHkzejlJYTRRR0xzRVcyIiwiaWF0IjoxNjk5NjU3NDAwLCJleHAiOjE2OTk2NjEwMDAsImVtYWlsIjoiZW1haWxAZW1haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImVtYWlsQGVtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.nGDEwKlEk1RzPBIkpcbIHNo3rVrdBFl9IFSM7hmUhVjPUWpPv5NTH__SVBm8O5ejAhqXtPhPvJO7rkaKRi3UKov3Dk978ofqvEve7EpR1ISukNC_FeOIP6qcL-g39Jb5Yc71417lb3nn3wXyD2TnKXsPJQQNBJeNyKIx2Azoku-y8FvWHMTZ9k_PBWuj7laO3BSxTa2tyIM69uGewrnkzQ2syckD9XxU1H-3qLhfZNydBq2tHlTiEjhjyaURHhvrtMgKQAXk9HyHJBDkNhYiY0k6Qvw3CBHOi1kXz2Yy8LSpwx1aa8n-zvFoVu36sTxUsRbjaBax-1VGa88yH3-IcQ",
+    "expirationTime": 1699661003277
+  },
+  "redirectEventId": null,
+  "lastLoginAt": "1699657400229",
+  "createdAt": "1699657230767"
+}
