@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { TextInput } from 'react-native-paper';
 
@@ -8,11 +8,26 @@ import Titulo from '../components/Titulo';
 import { LoginContext } from '../contexts/LoginContext';
 
 export default Login = ({ navigation }) => {
-  const { user, login } = useContext(LoginContext);
+  const { user, login, logout } = useContext(LoginContext);
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [isEmailValid, setEmailValid] = useState(false);
   const [isPasswordValid, setPasswordValid] = useState(false);
+
+  useEffect(() => {
+    const realizarLogout = async () => {
+      try {
+        // Chame a função de logout dentro da função assíncrona
+        await logout();
+      } catch (erro) {
+        alert('Erro durante o logout:', erro);
+      }
+    };
+
+    // Chame a função assíncrona dentro do useEffect
+    realizarLogout();
+  }, []); // Certifique-se de ajustar as dependências conforme necessário
+
   return (
     <ContainerCentralizado>
       <Titulo>Gerenciador de Tarefas</Titulo>

@@ -1,25 +1,46 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { TextInput } from 'react-native-paper';
 
 import ContainerCentralizado from '../components/ContainerCentralizado';
 import Titulo from '../components/Titulo';
 
-export default RecuperarSenha = ({navigation}) => {
+import { LoginContext } from '../contexts/LoginContext';
+
+export default RecuperarSenha = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
+
+  const { resetPassword } = useContext(LoginContext);
+
   return (
     <ContainerCentralizado>
       <Titulo>Recuperar Senha</Titulo>
       <View style={styles.loginArea}>
-        <TextInput style={styles.loginInput} placeholder={'E-mail'} value={email} onChangeText={(e)=>{setEmail(e)}}/>
+        <TextInput
+          style={styles.loginInput}
+          placeholder={'E-mail'}
+          value={email}
+          onChangeText={(e) => {
+            setEmail(e);
+          }}
+        />
       </View>
       <View style={styles.buttonsArea}>
-        <TouchableOpacity style={styles.buttons} onPress={()=>{navigation.navigate('Login')}}>
+        <TouchableOpacity
+          style={styles.buttons}
+          onPress={() => {
+            navigation.navigate('Login');
+          }}>
           <Text style={styles.buttonsText}>Cancelar</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.entrarButton} onPress={()=>{navigation.navigate('Login')}}>
+        <TouchableOpacity
+          style={styles.entrarButton}
+          onPress={async () => {
+            await resetPassword(email);
+            navigation.navigate('Login');
+          }}>
           <Text style={styles.buttonsText}>Enviar</Text>
         </TouchableOpacity>
       </View>
